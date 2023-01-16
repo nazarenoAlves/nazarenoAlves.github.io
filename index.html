@@ -4,41 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Montserrat&display=swap');
-        </style>
-    <link rel="stylesheet" href="style.css">
-    <title>Portfólio</title>
+    
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <title>Nazareno Alves</title>
 </head>
 <body>
-    <a href="#aboutme">Sobre mim</a>
-    <a href="#skills">Skills</a><br>
-    <div class="container">
-    <div class="name">
-    <h1>Nazareno Alves da Costa</h1>
-    </div>
-    <div class="pic">
-    <img src="img/naza.jpg"  alt="foto de nazareno" id="backToTop">
-    </div>  
-    <div class="sobre">
-    <p id="aboutme">Sou de <strong>Codó-Ma</strong> atualmente morando em <strong>São Luis-Ma</strong>
-    , tenho 25 anos, gosto de praticar <em>esportes</em> e me divertir com minha família.
-    </div>
-    </div>
-    </p>
-    <h4>Lista de Habilidades</h4>
-    <ul id="skills">
-        <li><strong>HTML5</strong></li>
-        <li>CSS3</li>
-        <li>BULMA</li>
-        <li>JAVASCRIPT</li>
-        <li>PHP</li>
-    </ul>
+    <header class="header">
+        <div class="inner">
+            <img src="./imgs/perfil.jpg" alt="foto-perfil" class="profile" />
+            <p class="description">Olá ! Eu sou o Nazareno Alves 😄
+                Desenvolvedor FullStack 💻
+            </p><br>
+           <a href="https://github.com/nazarenoAlves" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="logo-git"/></a>
+            <a href="https://www.linkedin.com/in/nazareno-alves-da-costa-31a3a2241/" target="_blank">
+                <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="logo-linkedin"/>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+            
+        <section class="section1">
+            <h2>Sobre</h2><br>
+           <p class="about">Tenho 26 anos, moro no Brasil, São Luis-MA, sou casado e tenho uma filha, sempre fui apaixonado por tecnologia e buscava conteúdos, para entender melhor como as coisas funcionavam por baixo dos panos e foi assim que conheci o mundo da programação e me profissionalizei na área.</p>
+        </section>
+        <section class="section2">
+            <h2>Skills</h2><br>
+            <div class="skills">
+                <img src="./imgs/html5-original.png">
+                <img src="./imgs/css3-original.png">
+                <img src="./imgs/javascript-original.png">
+                <img src="./imgs/react-original.png">
+                <img src="./imgs/bootstrap-original.png">
+                <img src="./imgs/bulma-plain.png">
+                <img src="./imgs/git-original.png">
+                <img src="./imgs/bash-plain.png">
+            </div>
+        </section>
+        <section class="forms">
+            <h2>Formação</h2><br>
+            <div class="form1">
+            <p>
+                <strong>Trybe 2022</strong><br><br>
 
-    <a href="https://www.youtube.com/" target="_blank" id="favorite">Meu Site Favorito</a><br><br>
-
-    <a href="#backToTop">Voltar para o topo</a>
-
-
+                São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, desenvolvimento, Front-end, Back-end, ciência da computação, metodologias ágeis e habilidades comportamentais.
+            </p>
+            </div><br>
+            <div class="form2">
+                <p>
+                    <strong>Programador FullStack JavaScript
+                        One Bit Code 2022 </strong><br><br>
+    
+                    Curso prático focado em formar Desenvolvedores FullStack para o mercado de trabalho com enfase em Tecnologias como: HTML, CSS, JavaScript, React, NodeJS, TypeScript, SQL, MongoDB e +  
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>
